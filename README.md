@@ -1,1 +1,1 @@
-# VSDersleri
+# Burada amaç C# dilini eksiksiz bir biçimde kullanabilir seviyeye kendimizi yükseltmek. Nelerle uğraşıyoruz ya rabbi? demeden, en doğru şekilde öğrenme arzusu içerisindeyiz. Bunca zaman tokatlandığımız yeter.
