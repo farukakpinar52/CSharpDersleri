@@ -9,7 +9,7 @@ namespace ConstKullanimi
 {
     internal class Program
     {
-        
+
         static void Main(string[] args)
         {
             #region const kullanımı
@@ -27,14 +27,15 @@ namespace ConstKullanimi
             #endregion
 
             #region aynı anda değişken tanımlamak
-            int a = 5, b = 11 ;
-            int c = a+b ;
+            //int a = 5, b = 11 ;
+            //int c = a+b ;
 
             #endregion
 
             #region deep copy ile eldeki verinin çoğaltılması
-            int x = 5;
-            int y = a;
+            //int a = 5;
+            //int x = 5;
+            //int y = a;
             //burada yaptığımız işlem sayesinde belleğin stack bölgesinde b=5 değerine sahip bir alan oluşturuldu.
             //bu yalnızca değer türlü değişenlerde (int double decimal byte) geçerlidir
             #endregion
@@ -465,10 +466,93 @@ namespace ConstKullanimi
             //Console.WriteLine(  x ??= "Sebep");
             #endregion
 
+            #region akış kontrol mekanizmaları.1) switch case yapısı
+
+            //int bin = 1000;
+            //int bin1 = 50;
+            //int bin2 = 30;
+            //switch (bin)
+            //{
+            //    case 1000 when (bin1>bin2):
+            //        Console.WriteLine("oluyor");
+            //        break;
+            //    case 1000 when (bin1 < bin2):
+            //        Console.WriteLine("olmuyor");
+            //        break;
+            //    default:
+            //        Console.WriteLine("burası default yeri");
+            //        break;
+            //}
+            #endregion
+
+            #region goto komutu
+
+            //farklı eşitliklerde aynı komutu çalıştıracaksak eğer kod tekrarına girmemek için goto komutu ile şu case 'i çalıştır diyebiliyoruz
+            //int a = 7;
+            //switch (a)
+            //{
+            //    case 5:
+            //        Console.WriteLine(a * 5);
+            //        break;
+            //    case 15:
+            //        Console.WriteLine(a * 15);
+            //        break;
+            //    case 7:
+            //    case 10:
+            //        goto case 5;
+            //    default:
+            //        break;
+            //}
+            #endregion
+
+            #region switch expressions 
+            //string isim = "";
+            //int i = 10;
+            //int k = 11;
+            //switch (i)
+            //{
+            //    case 5:
+            //        isim = "Hilmi";
+            //        break;
+            //    case 7:
+            //        isim = "Halil";
+            //        break;
+            //    case 10:
+            //        isim = "Ahmet";
+            //        break;
+            //    default:
+            //        break;
+            //}
+
+            //***************  ÜST SWITCH AYRI ALT SWITH'LER AYRI ÇALIŞTIR *********
+
+            //string isim1 = i switch
+            //{
+            //    5 => "Hilmi",
+            //    10 => "Halil",
+            //    11 => "Faruk"
+
+            //};
+            //Console.WriteLine(isim1);
+            //string isim2 = k switch
+            //{
+            //    5 => "Hilmi",
+            //    10 => "Halil",
+            //    11 => "Faruk"
+
+            //};
+            //Console.WriteLine(isim2);
+            
+            #endregion
+
+
+
+
+
 
             Console.ReadKey();
         }
 
     }
-    
+
 }
