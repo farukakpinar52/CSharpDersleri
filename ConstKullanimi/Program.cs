@@ -546,9 +546,9 @@ namespace ConstKullanimi
             #endregion
 
 
+            
 
-
-
+            //uj
 
             Console.ReadKey();
         }
